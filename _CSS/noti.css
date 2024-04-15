@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    overflow-x: hidden;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+}
+.content{
+    height: 60%;
+    display: flex;
+    align-items: center;
+    margin-left: 120px;
+    
+}
+.video{
+    border: 1px solid black;
+    width: 480px;
+    height: 260px;
+    text-align: center;
+    background: black;
+    color: wheat;
+    border-radius: 10px;
+    
+}
+.video p{
+    margin-top: 25%;
+}
+.titulo{
+    margin-left: 100px;
+    width: 30vw;
+    text-align: center;
+    
+}
+.titulo h1{
+    border-bottom: 2px solid black;
+    margin-top: 5px;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 30pt;
+}
+.content-02{
+
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+.caixas{
+    width: 170px;
+    height: 250px;
+    background-color: white;
+    border: 1px solid black;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+.caixas p{
+    position: relative;
+    top: 0%;
+    transform: translateY(50%);
+    display: block;
+
+}
+
+
+.btn-caixa{
+    position: relative;
+    top: 71%;
+    transform: translateY(-50%);
+    display: block;
+    margin: auto;
+    padding: 5%;
+    width: 90%;
+    border-radius: 10px;
+    border: none;
+    background-color: #c9edff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-caixa:hover{
+
+    background: linear-gradient(45deg, #0af, transparent, #0af);
+    transition: .2s cubic-bezier(0.4, 0, 1, 1);
+
+}
+div.caixas a{
+    text-decoration: none;
+    
+}
+.titulo-caixa{
+    border-bottom: 1px solid black;
+    text-align: center;
+    height: 20%;
+    display: block;
+    background-color: #c9edff;
+}
+.titulo-caixa h3{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
