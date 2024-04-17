@@ -1,39 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&family=Titillium+Web:ital,wght@0,200;1,200&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Saira Condensed', sans-serif;
     font-family: 'Titillium Web', sans-serif;
+
 }
+
 /* BOTÃO PARA VOLTAR AO MENU INICIAL*/
-.home{
+.home {
     position: absolute;
     z-index: 9;
-    font-size: 35px;
+    font-size: 20px;
     margin-left: 15px;
     margin-top: 5px;
 }
-.fa-home:before:hover{
+
+.fa-home:before:hover {
     color: #024ac7;
 }
 
-.fa-home:before{
+.fa-home:before {
     color: #fd7cff;
 }
+
 /*CONTAINER PRINCIPAL PARA AJUSTE DE TELA*/
-.container{
+.container {
     position: relative;
     width: 100%;
     min-height: 100vh;
     background-color: #fff;
     overflow: hidden;
 }
+
 /*BOLA AZUL QUE PEGA "METADE" DA TELA*/
-.container:before{
+.container:before {
     content: '';
     position: absolute;
     width: 2000px;
@@ -47,20 +53,21 @@ body{
     transition: 1.8s ease-in-out;
 
 }
+
 /*FORMULARIO LOGIN CADASTRO E LOGIN*/
-.forms-container{
+.forms-container {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    
+
 }
 
-.login-cadastro{
+.login-cadastro {
     position: absolute;
     top: 50%;
-    left:75%;
+    left: 75%;
     transform: translate(-50%, -50%);
     width: 50%;
     display: grid;
@@ -69,7 +76,7 @@ body{
     transition: 1s .7s ease-in-out;
 }
 
-form{
+form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,19 +87,23 @@ form{
     transition: 0.2s 0.7s ease-in-out;
 
 }
-form.login-form{
+
+form.login-form {
     z-index: 2;
 }
-form.cadastro-form{
+
+form.cadastro-form {
     z-index: 1;
     opacity: 0;
 }
-.titulo{
+
+.titulo {
     font-size: 2.2rem;
     color: #444;
-    margin-bottom: 10px
+    margin-bottom: 50px
 }
-.input-dig{
+
+.input-dig {
     max-width: 380px;
     width: 100%;
     height: 55px;
@@ -103,13 +114,15 @@ form.cadastro-form{
     grid-template-columns: 15% 85%;
     padding: 0 .4rem;
 }
-.input-dig i{
+
+.input-dig i {
     text-align: center;
     line-height: 55px;
     color: #acacac;
     font-size: 1.1rem;
 }
-.input-dig input{
+
+.input-dig input {
     background: none;
     outline: none;
     border: none;
@@ -118,12 +131,14 @@ form.cadastro-form{
     font-size: 1.1rem;
     color: #333;
 }
-.input-dig input::placeholder{
+
+.input-dig input::placeholder {
     color: #aaa;
     font-weight: 500;
 }
- /* Configuração do input Entrar*/
-.btn{
+
+/* Configuração do input Entrar*/
+.btn {
     width: 150px;
     height: 49px;
     border: none;
@@ -137,11 +152,13 @@ form.cadastro-form{
     margin: 10px 0;
     transition: .5s;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #024ac7;
 
 }
-.painel-container{
+
+.painel-container {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -150,7 +167,8 @@ form.cadastro-form{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.painel{
+
+.painel {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -158,30 +176,36 @@ form.cadastro-form{
     text-align: center;
     z-index: 7;
 }
-.esquerdo-painel{
+
+.esquerdo-painel {
     pointer-events: all;
     padding: 3rem 17% 2rem 17%;
 }
-.direito-painel{
+
+.direito-painel {
     pointer-events: none;
     padding: 3rem 17% 2rem 17%;
 }
-.painel .content{
+
+.painel .content {
     color: #fff;
-    transition: .9s .6s ease-in-out; 
+    transition: .9s .6s ease-in-out;
 }
-.painel h3{
+
+.painel h3 {
     font-weight: 600;
     line-height: 1;
     font-size: 1.5rem;
 
 }
-.painel p{
+
+.painel p {
     font-size: 0.95rem;
     padding: 0.7rem 0;
-    
+
 }
-.btn.transparent{
+
+.btn.transparent {
     margin: 0;
     background: none;
     border: 2px solid #fff;
@@ -191,11 +215,14 @@ form.cadastro-form{
     font-size: 0.8rem;
     /* Sugestão: linear-gradient(171deg, #3b50ff, #fc4cff);*/
 }
-.imagem{
+
+.imagem {
     width: 100%;
     transition: 1.1s .4s ease-in-out;
 }
-.direito-painel .content, .direito-painel .imagem{
+
+.direito-painel .content,
+.direito-painel .imagem {
     transform: translateX(800px)
 }
 
@@ -205,32 +232,38 @@ form.cadastro-form{
 .container.btn-cadastro-mode:before {
     transform: translate(100%, -50%);
     right: 52%;
-    
+
 }
 
 .container.btn-cadastro-mode .esquerdo-painel .imagem,
-.container.btn-cadastro-mode .esquerdo-painel .content{
+.container.btn-cadastro-mode .esquerdo-painel .content {
 
     transform: translateX(-800px);
 }
-.container.btn-cadastro-mode .direito-painel .content, 
-.container.btn-cadastro-mode .direito-painel .imagem{
+
+.container.btn-cadastro-mode .direito-painel .content,
+.container.btn-cadastro-mode .direito-painel .imagem {
     transform: translateX(0px)
 }
-.container.btn-cadastro-mode .esquerdo-painel{
+
+.container.btn-cadastro-mode .esquerdo-painel {
     pointer-events: none;
 }
-.container.btn-cadastro-mode .direito-painel{
+
+.container.btn-cadastro-mode .direito-painel {
     pointer-events: all;
 }
-.container.btn-cadastro-mode .login-cadastro{
+
+.container.btn-cadastro-mode .login-cadastro {
     left: 25%;
 }
-.container.btn-cadastro-mode form.login-form{
+
+.container.btn-cadastro-mode form.login-form {
     z-index: 1;
     opacity: 0;
 }
-.container.btn-cadastro-mode form.cadastro-form{
+
+.container.btn-cadastro-mode form.cadastro-form {
     z-index: 2;
     opacity: 1;
 }
@@ -259,4 +292,3 @@ form.cadastro-form{
     background-color: green;
 
 } */
-        

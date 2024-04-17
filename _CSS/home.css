@@ -90,6 +90,25 @@ nav#menu ul li a:hover {
 
 }
 
+#btnSair {
+    background-color: red;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+
+}
+
+#btnSair:hover {
+    background-color: rgb(207, 0, 0);
+    transition: .3s;
+}
+
 /*nav#menu ul li a:hover::after{    transform: scale(1);
     transition: all 0.3s;
 
@@ -248,8 +267,6 @@ button.slick-next:hover {
     text-align: center;
     margin: auto;
     padding-bottom: 50px;
-
-
 }
 
 hr {
@@ -301,17 +318,13 @@ hr {
     font-family: arial;
     font-size: 12pt;
     line-height: 28px;
-
 }
 
-.content-principal p#segundotexto {
-    text-align: justify;
-    text-indent: 50px;
-    filter: blur(2px);
-}
-
-figure.ImagensHome {
-    filter: blur(4px);
+.topicos {
+    position: relative;
+    display: block;
+    max-width: 600px;
+    width: 100%;
 }
 
 figure.ImagensHome {
@@ -320,6 +333,7 @@ figure.ImagensHome {
     width: 100%;
     margin: auto;
     box-shadow: 1px 1px 4px black;
+    margin-bottom: 35px;
 
 }
 
@@ -328,10 +342,28 @@ figure.ImagensHome img {
     height: 100%;
 }
 
+figure.ImagensHomeText {
+    border: 8px solid rgb(255, 255, 255);
+    max-width: 300px;
+    width: 100%;
+    margin: auto;
+    box-shadow: 1px 1px 4px black;
+    margin-bottom: 35px;
 
+}
 
+.textImg {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
 
-
+.imgtext {
+    width: 300px;
+}
 
 
 /* ========================== RODAPÉ DA PÁGINA =========================*/
@@ -354,86 +386,3 @@ footer {
     text-align: center;
     font-size: 15px;
 }
-
-.façaLogin {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 6px;
-    padding: 30px 56px;
-    margin-top: 24px;
-    margin-bottom: 24px;
-    background-color: rgb(201 237 255);
-    z-index: 1;
-    border: 1px solid black;
-    flex-wrap: wrap;
-    align-content: center;
-    flex-direction: row;
-
-
-
-}
-
-.bubble-container {
-    position: absolute;
-    overflow: hidden;
-    pointer-events: none;
-    width: 100%;
-    height: 100%;
-    border-radius: 6px;
-    color: rgb(0, 0, 0);
-    margin: 0px 100px 0px 100px;
-
-}
-
-.façaLogin .register-text {
-    width: 300px;
-    color: rgb(0, 0, 0);
-    font-size: 17pt;
-    font-weight: 600;
-    line-height: 25px;
-
-
-}
-
-
-
-.btnLogin {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width: 160px;
-    height: 60px;
-    border-radius: 70px;
-    border: none;
-    color: rgb(0, 0, 0);
-    background-color: rgb(154, 221, 255);
-    cursor: pointer;
-    z-index: 10;
-    font-size: 13pt;
-    font-weight: 300;
-    line-height: 20px;
-
-
-
-
-}
-
-/*.msg_erro {
-    margin-top: -413px;
-    background-color: #ff000099;
-    padding: 10px;
-    font-size: 10pt;
-    align-content: center;
-    justify-content: center;
-    position: relative;
-    margin-left: auto;
-    max-width: 380px;
-    width: 100%;
-    height: 40px;
-    margin-right: auto;
-    font-family: cursive;
-    border: none;
-    border-radius: 100px;
-    text-align: center;
-    color: #fff;
-}*/
