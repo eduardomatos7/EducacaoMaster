@@ -38,8 +38,8 @@ O site conta com as seguintes funcionalidades:
 O projeto **Educação Master** foi desenvolvido utilizando as seguintes tecnologias:
 
 - **Front-end**:
-  - HTML5, CSS3 e JavaScript para a criação de uma interface de usuário responsiva e amigável.
-  - Frameworks como **Bootstrap** para garantir um design responsivo e moderno.
+  - HTML5, CSS3 e JavaScript para a criação de uma interface bonita e de fácil acesso.
+  - Frameworks como **Bootstrap** para garantir um design moderno.
 
 - **Back-end**:
   - **PHP** para a lógica de negócios e gerenciamento de dados do site.
